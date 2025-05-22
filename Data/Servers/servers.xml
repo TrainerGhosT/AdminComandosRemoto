@@ -46,4 +46,37 @@
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAABOktAKjJaANKOcKNOPRJSjiQsdTwf9JTa1Hzr1mo4KRgAAAAAOgAAAAAIAACAAAAAnbLT+UkA9yqX+Qt4C6E5Wvdke4aMLeONscqwz/im0ThAAAADZlr9YBgVBLL25E2chUsglQAAAAOmqcFtbwU2fHqMgL33ehJEHpAG13tX5gY5NuYLKxzpcoWmg3QGmEU4qF596kJ+kYAZBGM1uQB1zO4RncPtjl+Y=</EncryptedPassword>
     <Commands />
   </Server>
+  <Server>
+    <Id>aa8bf415-1fe5-4249-9aeb-ddfbfbba6a59</Id>
+    <Name>container1</Name>
+    <IP>127.0.0.1</IP>
+    <Username>dockeruser</Username>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAACvbowjRW4bq0RsNh3zF7SEwrU1A570prOrCpJwV6T5egAAAAAOgAAAAAIAACAAAABvKb/LA69UO+c1YOdDXKKuWD9jkjtp2TfD3Hiw/iYWZxAAAACUP4htOJ9myhYUTVwe4wU0QAAAAPJHrqHk1hysONP1XIqzzKpCWRHUCTinhe+TM9Ubwi2gwZTtbx13nEWBN52GCMfvGFwuGh7ByaB3TYGaf5y+oOQ=</EncryptedPassword>
+    <Commands>
+      <Commands>
+        <Id>0eae1bb0-ab8e-4979-baec-fa98f25ec402</Id>
+        <ServerId>aa8bf415-1fe5-4249-9aeb-ddfbfbba6a59</ServerId>
+        <Text>pwd</Text>
+      </Commands>
+      <Commands>
+        <Id>41311174-7fa2-4315-9797-3f877e97b629</Id>
+        <ServerId>aa8bf415-1fe5-4249-9aeb-ddfbfbba6a59</ServerId>
+        <Text>ssh -p 2222 dockeruser@localhost &amp; dockerpass</Text>
+      </Commands>
+    </Commands>
+  </Server>
+  <Server>
+    <Id>c8bf56f3-3fce-4b1f-b755-b26f4caf0af8</Id>
+    <Name>container2</Name>
+    <IP>127.0.0.1:2223</IP>
+    <Username>dockeruser</Username>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAAD2EnNzUZ8sGMuiERjO9QCdwBV4dRJBKEpUE91SUO1QpgAAAAAOgAAAAAIAACAAAACfLIEMo30tMtr9uMC2vwPO8ZqZt5DGI2pRrx49vvbpNxAAAAAjzHwvDZv/yXYWxAVvK89DQAAAAEgvTrA/kizJSaGQmlfw4540HXWwUXXs7QHJkZw/TIMnxxgSgiRaFdJHN8xqIgN6koqtn8whYyUlCGI9jUGhe+w=</EncryptedPassword>
+    <Commands>
+      <Commands>
+        <Id>02e027cc-38c7-4362-bd43-33c6378e2a95</Id>
+        <ServerId>c8bf56f3-3fce-4b1f-b755-b26f4caf0af8</ServerId>
+        <Text>mkdir pruebassh</Text>
+      </Commands>
+    </Commands>
+  </Server>
 </ArrayOfServer>

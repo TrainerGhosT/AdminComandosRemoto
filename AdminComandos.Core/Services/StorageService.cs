@@ -58,8 +58,8 @@ namespace AdminComandos.Core.Services
                 if (string.IsNullOrWhiteSpace(ip))
                     return (false, "La dirección IP no puede estar vacía.");
 
-                if (!ValidationHelper.IsValidIp(ip))
-                    return (false, "La dirección IP no es válida.");
+                //if (!ValidationHelper.IsValidIp(ip))
+                //    return (false, "La dirección IP no es válida.");
 
                 if (string.IsNullOrWhiteSpace(username))
                     return (false, "El nombre de usuario no puede estar vacío.");

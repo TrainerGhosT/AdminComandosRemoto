@@ -28,16 +28,16 @@ namespace AdminComandos
         {
             InitializeComponent();
 
-            
             string projectPath = GetProjectDirectory();
             string dataPath = Path.Combine(projectPath, "../Data");
             Directory.CreateDirectory(dataPath);
 
-            
-
             var repository = new XMLRepository(dataPath);
             _storageService = new StorageService(repository);
-            _sshService = new SshService();
+
+            // Crear el factory y pasarlo al servicio SSH
+            var sshClientFactory = new SshClientFactory();
+            _sshService = new SshService(sshClientFactory);
 
             ConfigureListViews();
             LoadServers();
