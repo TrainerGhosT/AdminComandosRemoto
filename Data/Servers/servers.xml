@@ -39,14 +39,6 @@
     </Commands>
   </Server>
   <Server>
-    <Id>6bc21512-5fad-4e17-b191-481858c10ae7</Id>
-    <Name>MySQL</Name>
-    <IP>1.1.1.1</IP>
-    <Username>root</Username>
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAABOktAKjJaANKOcKNOPRJSjiQsdTwf9JTa1Hzr1mo4KRgAAAAAOgAAAAAIAACAAAAAnbLT+UkA9yqX+Qt4C6E5Wvdke4aMLeONscqwz/im0ThAAAADZlr9YBgVBLL25E2chUsglQAAAAOmqcFtbwU2fHqMgL33ehJEHpAG13tX5gY5NuYLKxzpcoWmg3QGmEU4qF596kJ+kYAZBGM1uQB1zO4RncPtjl+Y=</EncryptedPassword>
-    <Commands />
-  </Server>
-  <Server>
     <Id>aa8bf415-1fe5-4249-9aeb-ddfbfbba6a59</Id>
     <Name>container1</Name>
     <IP>127.0.0.1</IP>

@@ -121,7 +121,7 @@
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(86, 40);
             btnSave.TabIndex = 3;
-            btnSave.Text = "Guardar";
+            btnSave.Text = "Aceptar";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
             // 

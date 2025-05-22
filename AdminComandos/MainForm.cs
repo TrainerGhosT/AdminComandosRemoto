@@ -173,12 +173,12 @@ namespace AdminComandos
         private void List_Servers_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadCommandsForSelectedServer();
-            UpdateButtonStates();
+            //UpdateButtonStates();
         }
 
         private void List_Comandos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateButtonStates();
+            //UpdateButtonStates();
         }
 
         private void UpdateButtonStates()
@@ -217,7 +217,7 @@ namespace AdminComandos
         {
             if (List_Servers.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Por favor seleccione un servidor para editar.", "Atención",
+                MessageBox.Show("Por favor seleccione un servidor", "Atención",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -227,7 +227,7 @@ namespace AdminComandos
             if (form.ShowDialog() == DialogResult.OK)
             {
                 LoadServers();
-                UpdateStatusBar("Servidor modificado correctamente.");
+                UpdateStatusBar("Se ha modificado la informacion del servidor");
             }
         }
 
@@ -235,14 +235,14 @@ namespace AdminComandos
         {
             if (List_Servers.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Por favor seleccione un servidor para eliminar.", "Atención",
+                MessageBox.Show("Por favor seleccione un servidor", "Atención",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             var selectedServer = (Server)List_Servers.SelectedItems[0].Tag;
             var result = MessageBox.Show(
-                $"¿Está seguro de eliminar el servidor '{selectedServer.Name}'?\n\nEsta acción eliminará también todos los comandos asociados.",
+                $"¿Desea eliminar el servidor, '{selectedServer.Name}'?\n\nEsta acción eliminará también todos los comandos asociados.",
                 "Confirmar eliminación",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
@@ -291,7 +291,7 @@ namespace AdminComandos
         {
             if (List_Comandos.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Por favor seleccione un comando para editar.", "Atención",
+                MessageBox.Show("Por favor seleccione un comando.", "Atención",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -310,14 +310,14 @@ namespace AdminComandos
         {
             if (List_Comandos.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Por favor seleccione un comando para eliminar.", "Atención",
+                MessageBox.Show("Por favor seleccione un comando.", "Atención",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             var selectedCommand = (Commands)List_Comandos.SelectedItems[0].Tag;
             var result = MessageBox.Show(
-                $"¿Está seguro de eliminar el comando '{selectedCommand.Text}'?",
+                $"¿Desea de eliminar el comando '{selectedCommand.Text}'?",
                 "Confirmar eliminación",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
@@ -398,7 +398,7 @@ namespace AdminComandos
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            UpdateButtonStates();
+           // UpdateButtonStates();
             UpdateStatusBar("Aplicación iniciada correctamente.");
         }
     }
