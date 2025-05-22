@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfServer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Server>
+    <Id>90f5f898-e948-44ca-9b90-6628394a29c0</Id>
+    <Name>DevServer</Name>
+    <IP>127.0.0.1</IP>
+    <Username>usr</Username>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAADsK4TELqUw4afsWmRvs1ZbNWdm6Dt/zBB7cHDFrNgO1gAAAAAOgAAAAAIAACAAAABDTTvtp828N8SXtKnEvm6opMAzx5iUTKbUBuFT4Sh0/hAAAACD/ZJkwBhvjk9BBjKikrCgQAAAAAkD+NYTYX0VVZH9LH4e9zOGzcFEB5rq3n/kjmDUWgJyBCrpQiUXsK3uScbrKQK3mCG0SsX8WUvqcQEOaTBxQbw=</EncryptedPassword>
+    <Commands>
+      <Commands>
+        <Id>f30a9771-9f2d-40bc-bb84-974286011d2b</Id>
+        <ServerId>90f5f898-e948-44ca-9b90-6628394a29c0</ServerId>
+        <Text>ls</Text>
+      </Commands>
+      <Commands>
+        <Id>46e4bbbc-53cc-4d30-93f6-1d52845ed0b9</Id>
+        <ServerId>90f5f898-e948-44ca-9b90-6628394a29c0</ServerId>
+        <Text>ipconfig</Text>
+      </Commands>
+    </Commands>
+  </Server>
+  <Server>
+    <Id>e90cbc27-f041-4d4a-8878-f11ebb9c6d81</Id>
+    <Name>localhost</Name>
+    <IP>192.168.0.4</IP>
+    <Username>user</Username>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAADXe9fFEU6Aen+RvtKmEl3ez2ax7nkdnsggTXFjw8yflQAAAAAOgAAAAAIAACAAAABhLIe0Qk1xzIIUXeBSNDODRNIv2oAnxewz/h1jNxhGLBAAAAB0CRQIcWqEn4/ZAqhuY3GZQAAAAObzqe0DGZkKsdwmTIrLeLSsRf+O9i99ddyW/cntPs7eEDmqsBokfdoDivfCPhnUreKdPMzxe33VfC+wKh26D2U=</EncryptedPassword>
+    <Commands>
+      <Commands>
+        <Id>b109d987-3fc3-41eb-9a0a-f9a12a165c95</Id>
+        <ServerId>e90cbc27-f041-4d4a-8878-f11ebb9c6d81</ServerId>
+        <Text>npm install</Text>
+      </Commands>
+      <Commands>
+        <Id>206e0f89-fe53-4252-8926-28638aa78d0b</Id>
+        <ServerId>e90cbc27-f041-4d4a-8878-f11ebb9c6d81</ServerId>
+        <Text>pwd</Text>
+      </Commands>
+    </Commands>
+  </Server>
+  <Server>
+    <Id>6bc21512-5fad-4e17-b191-481858c10ae7</Id>
+    <Name>MySQL</Name>
+    <IP>1.1.1.1</IP>
+    <Username>root</Username>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAABOktAKjJaANKOcKNOPRJSjiQsdTwf9JTa1Hzr1mo4KRgAAAAAOgAAAAAIAACAAAAAnbLT+UkA9yqX+Qt4C6E5Wvdke4aMLeONscqwz/im0ThAAAADZlr9YBgVBLL25E2chUsglQAAAAOmqcFtbwU2fHqMgL33ehJEHpAG13tX5gY5NuYLKxzpcoWmg3QGmEU4qF596kJ+kYAZBGM1uQB1zO4RncPtjl+Y=</EncryptedPassword>
+    <Commands />
+  </Server>
+</ArrayOfServer>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfServer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Server>
+    <Id>9bdc22d0-8fb8-49b5-9882-e3d13d8caffc</Id>
+    <Name>DevServer</Name>
+    <IP>127.0.0.254</IP>
+    <Username>usr</Username>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj+wx1/q+UEOc3Oml6OfbfgAAAAACAAAAAAAQZgAAAAEAACAAAAAq84ayrxRFJRkFuDETxaoYcImaX8HinkcVVxLZGNMVNgAAAAAOgAAAAAIAACAAAABzyiXwMBgnvm2jrf0uc20/+kxNuaXqs90HR6Y5VeVS2BAAAABuDasFsRwK5dtZJ0+m8JMQQAAAAEk71hE51RLaSi2VEOEvd10SVOvLCDfyA/L2b4siNqWeQYptCgnIRZqoMcdks9oUfSJpgUQCltGxLMnQfyXqpsg=</EncryptedPassword>
+    <Commands />
+  </Server>
+  <Server>
+    <Id>185ab7ac-b2d2-4c70-8e01-3f96f1a6a103</Id>
+    <Name>LinuxServer</Name>
+    <IP>192.168.255.4</IP>
+    <Username>root</Username>
+    <EncryptedPassword>root</EncryptedPassword>
+    <Commands />
+  </Server>
+</ArrayOfServer>

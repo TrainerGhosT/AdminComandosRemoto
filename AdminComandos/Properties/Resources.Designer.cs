@@ -8,10 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AdminComandos.Properties {
+namespace AdminComandos.Properties
+{
     using System;
-    
-    
+
+
     /// <summary>
     ///   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
     /// </summary>
@@ -22,90 +23,138 @@ namespace AdminComandos.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
-        
+    internal class Resources
+    {
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Resources()
+        {
         }
-        
+
         /// <summary>
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        internal static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AdminComandos.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
+        internal static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap agregar {
-            get {
+        internal static System.Drawing.Bitmap agregar
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("agregar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cerrar_ventana_de_comando {
-            get {
+        internal static System.Drawing.Bitmap cerrar_ventana_de_comando
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("cerrar-ventana-de-comando", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_línea_de_comandos_48 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-línea-de-comandos-48", resourceCulture);
+
+
+        internal static System.Drawing.Bitmap anadir
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("anadir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Image1 {
-            get {
+
+        internal static System.Drawing.Bitmap boton_de_inicio
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("boton-de-inicio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap configuracion_del_servidor
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("configuracion-del-servidor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap eliminar_base_de_datos
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("eliminar-base-de-datos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap Image1
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("Image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
+
+        internal static System.Drawing.Bitmap secuencias_de_comandos
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("secuencias-de-comandos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap secuencias_de_comandos {
-            get {
-                object obj = ResourceManager.GetObject("secuencias-de-comandos", resourceCulture);
+        internal static System.Drawing.Bitmap icons8_línea_de_comandos_48
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8-línea-de-comandos-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

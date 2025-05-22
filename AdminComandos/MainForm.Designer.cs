@@ -7,12 +7,12 @@ namespace AdminComandos
     partial class MainForm
     {
         /// <summary>
-        /// Required designer variable.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -27,388 +27,277 @@ namespace AdminComandos
         #region Windows Form Designer generated code
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.splitContainerMain = new System.Windows.Forms.SplitContainer();
-            this.panelServers = new System.Windows.Forms.Panel();
-            this.listViewServers = new System.Windows.Forms.ListView();
-            this.panelServerButtons = new System.Windows.Forms.Panel();
-            this.btnDeleteServer = new System.Windows.Forms.Button();
-            this.btnEditServer = new System.Windows.Forms.Button();
-            this.btnAddServer = new System.Windows.Forms.Button();
-            this.lblServers = new System.Windows.Forms.Label();
-            this.splitContainerRight = new System.Windows.Forms.SplitContainer();
-            this.panelCommands = new System.Windows.Forms.Panel();
-            this.listViewCommands = new System.Windows.Forms.ListView();
-            this.panelCommandButtons = new System.Windows.Forms.Panel();
-            this.btnExecuteCommand = new System.Windows.Forms.Button();
-            this.btnDeleteCommand = new System.Windows.Forms.Button();
-            this.btnEditCommand = new System.Windows.Forms.Button();
-            this.btnAddCommand = new System.Windows.Forms.Button();
-            this.lblCommands = new System.Windows.Forms.Label();
-            this.panelOutput = new System.Windows.Forms.Panel();
-            this.txtOutput = new System.Windows.Forms.RichTextBox();
-            this.lblOutput = new System.Windows.Forms.Label();
-
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            panel1 = new Panel();
+            Btn_EliminarServidor = new Button();
+            Btn_EditarServidor = new Button();
+            Btn_AnadirServidor = new Button();
+            label1 = new Label();
+            groupBox1 = new GroupBox();
+            List_Comandos = new ListView();
+            panel2 = new Panel();
+            Btn_EliminarCommand = new Button();
+            Btn_EditarComand = new Button();
+            Btn_Iniciar = new Button();
+            Btn_AnadirComand = new Button();
+            Txt_Resultados = new TextBox();
+            statusStrip1 = new StatusStrip();
+            tslBitacora = new ToolStripStatusLabel();
+            List_Servers = new ListView();
+            panel1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            panel2.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            SuspendLayout();
             // 
-            // panelTop
+            // panel1
             // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(240)))), ((int)(((byte)(250)))));
-            this.panelTop.Controls.Add(this.labelTitle);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(984, 50);
-            this.panelTop.TabIndex = 0;
+            panel1.Controls.Add(Btn_EliminarServidor);
+            panel1.Controls.Add(Btn_EditarServidor);
+            panel1.Controls.Add(Btn_AnadirServidor);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(389, 131);
+            panel1.TabIndex = 0;
             // 
-            // labelTitle
+            // Btn_EliminarServidor
             // 
-            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.labelTitle.Location = new System.Drawing.Point(0, 0);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(984, 50);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "Administración de comandos remotos";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            Btn_EliminarServidor.BackColor = Color.Transparent;
+            Btn_EliminarServidor.BackgroundImage = (System.Drawing.Image)resources.GetObject("Btn_EliminarServidor.BackgroundImage");
+            Btn_EliminarServidor.BackgroundImageLayout = ImageLayout.Zoom;
+            Btn_EliminarServidor.FlatStyle = FlatStyle.Popup;
+            Btn_EliminarServidor.ForeColor = Color.Transparent;
+            Btn_EliminarServidor.Location = new Point(277, 36);
+            Btn_EliminarServidor.Margin = new Padding(3, 4, 3, 4);
+            Btn_EliminarServidor.Name = "Btn_EliminarServidor";
+            Btn_EliminarServidor.Size = new Size(86, 91);
+            Btn_EliminarServidor.TabIndex = 9;
+            Btn_EliminarServidor.UseVisualStyleBackColor = false;
+            Btn_EliminarServidor.Click += Btn_EliminarServidor_Click;
             // 
-            // splitContainerMain
+            // Btn_EditarServidor
             // 
-            this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainerMain.Location = new System.Drawing.Point(0, 50);
-            this.splitContainerMain.Name = "splitContainerMain";
+            Btn_EditarServidor.BackColor = Color.Transparent;
+            Btn_EditarServidor.BackgroundImage = (System.Drawing.Image)resources.GetObject("Btn_EditarServidor.BackgroundImage");
+            Btn_EditarServidor.BackgroundImageLayout = ImageLayout.Zoom;
+            Btn_EditarServidor.FlatStyle = FlatStyle.Popup;
+            Btn_EditarServidor.ForeColor = Color.Transparent;
+            Btn_EditarServidor.Location = new Point(154, 36);
+            Btn_EditarServidor.Margin = new Padding(3, 4, 3, 4);
+            Btn_EditarServidor.Name = "Btn_EditarServidor";
+            Btn_EditarServidor.Size = new Size(86, 91);
+            Btn_EditarServidor.TabIndex = 8;
+            Btn_EditarServidor.UseVisualStyleBackColor = false;
+            Btn_EditarServidor.Click += Btn_EditarServidor_Click;
             // 
-            // splitContainerMain.Panel1
+            // Btn_AnadirServidor
             // 
-            this.splitContainerMain.Panel1.Controls.Add(this.panelServers);
-            this.splitContainerMain.Panel1MinSize = 250;
+            Btn_AnadirServidor.BackColor = Color.Transparent;
+            Btn_AnadirServidor.BackgroundImage = Properties.Resources.anadir;
+            Btn_AnadirServidor.BackgroundImageLayout = ImageLayout.Zoom;
+            Btn_AnadirServidor.FlatStyle = FlatStyle.Popup;
+            Btn_AnadirServidor.ForeColor = Color.Transparent;
+            Btn_AnadirServidor.Location = new Point(24, 36);
+            Btn_AnadirServidor.Margin = new Padding(3, 4, 3, 4);
+            Btn_AnadirServidor.Name = "Btn_AnadirServidor";
+            Btn_AnadirServidor.Size = new Size(86, 91);
+            Btn_AnadirServidor.TabIndex = 7;
+            Btn_AnadirServidor.UseVisualStyleBackColor = false;
+            Btn_AnadirServidor.Click += Btn_AnadirServidor_Click;
             // 
-            // splitContainerMain.Panel2
+            // label1
             // 
-            this.splitContainerMain.Panel2.Controls.Add(this.splitContainerRight);
-            this.splitContainerMain.Size = new System.Drawing.Size(984, 611);
-            this.splitContainerMain.SplitterDistance = 250;
-            this.splitContainerMain.TabIndex = 1;
+            label1.AutoSize = true;
+            label1.Location = new Point(14, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(158, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Servidores disponibles";
             // 
-            // panelServers
+            // groupBox1
             // 
-            this.panelServers.Controls.Add(this.listViewServers);
-            this.panelServers.Controls.Add(this.panelServerButtons);
-            this.panelServers.Controls.Add(this.lblServers);
-            this.panelServers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelServers.Location = new System.Drawing.Point(0, 0);
-            this.panelServers.Name = "panelServers";
-            this.panelServers.Padding = new System.Windows.Forms.Padding(10);
-            this.panelServers.Size = new System.Drawing.Size(250, 611);
-            this.panelServers.TabIndex = 0;
+            groupBox1.Controls.Add(List_Comandos);
+            groupBox1.Controls.Add(panel2);
+            groupBox1.Location = new Point(395, 0);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(523, 320);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Comandos del servidor";
             // 
-            // listViewServers
+            // List_Comandos
             // 
-            this.listViewServers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listViewServers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewServers.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listViewServers.FullRowSelect = true;
-            this.listViewServers.HideSelection = false;
-            this.listViewServers.Location = new System.Drawing.Point(10, 35);
-            this.listViewServers.MultiSelect = false;
-            this.listViewServers.Name = "listViewServers";
-            this.listViewServers.Size = new System.Drawing.Size(230, 516);
-            this.listViewServers.TabIndex = 2;
-            this.listViewServers.UseCompatibleStateImageBehavior = false;
-            this.listViewServers.View = System.Windows.Forms.View.List;
-            this.listViewServers.SelectedIndexChanged += new System.EventHandler(this.listViewServers_SelectedIndexChanged);
+            List_Comandos.Location = new Point(7, 107);
+            List_Comandos.Margin = new Padding(3, 4, 3, 4);
+            List_Comandos.Name = "List_Comandos";
+            List_Comandos.Size = new Size(509, 204);
+            List_Comandos.TabIndex = 3;
+            List_Comandos.UseCompatibleStateImageBehavior = false;
             // 
-            // panelServerButtons
+            // panel2
             // 
-            this.panelServerButtons.Controls.Add(this.btnDeleteServer);
-            this.panelServerButtons.Controls.Add(this.btnEditServer);
-            this.panelServerButtons.Controls.Add(this.btnAddServer);
-            this.panelServerButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelServerButtons.Location = new System.Drawing.Point(10, 551);
-            this.panelServerButtons.Name = "panelServerButtons";
-            this.panelServerButtons.Size = new System.Drawing.Size(230, 50);
-            this.panelServerButtons.TabIndex = 1;
+            panel2.Controls.Add(Btn_EliminarCommand);
+            panel2.Controls.Add(Btn_EditarComand);
+            panel2.Controls.Add(Btn_Iniciar);
+            panel2.Controls.Add(Btn_AnadirComand);
+            panel2.Location = new Point(7, 23);
+            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(510, 76);
+            panel2.TabIndex = 2;
             // 
-            // btnDeleteServer
+            // Btn_EliminarCommand
             // 
-            this.btnDeleteServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnDeleteServer.FlatAppearance.BorderSize = 0;
-            this.btnDeleteServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteServer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDeleteServer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnDeleteServer.Location = new System.Drawing.Point(156, 5);
-            this.btnDeleteServer.Name = "btnDeleteServer";
-            this.btnDeleteServer.Size = new System.Drawing.Size(40, 40);
-            this.btnDeleteServer.TabIndex = 2;
-            this.btnDeleteServer.Text = "−";
-            this.btnDeleteServer.UseVisualStyleBackColor = false;
-            this.btnDeleteServer.Click += new System.EventHandler(this.btnDeleteServer_Click);
+            Btn_EliminarCommand.BackColor = Color.Transparent;
+            Btn_EliminarCommand.BackgroundImage = (System.Drawing.Image)resources.GetObject("Btn_EliminarCommand.BackgroundImage");
+            Btn_EliminarCommand.BackgroundImageLayout = ImageLayout.Zoom;
+            Btn_EliminarCommand.FlatStyle = FlatStyle.Popup;
+            Btn_EliminarCommand.ForeColor = Color.Transparent;
+            Btn_EliminarCommand.Location = new Point(194, 7);
+            Btn_EliminarCommand.Margin = new Padding(3, 4, 3, 4);
+            Btn_EliminarCommand.Name = "Btn_EliminarCommand";
+            Btn_EliminarCommand.Size = new Size(66, 65);
+            Btn_EliminarCommand.TabIndex = 10;
+            Btn_EliminarCommand.UseVisualStyleBackColor = false;
+            Btn_EliminarCommand.Click += Btn_EliminarCommand_Click;
             // 
-            // btnEditServer
+            // Btn_EditarComand
             // 
-            this.btnEditServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
-            this.btnEditServer.FlatAppearance.BorderSize = 0;
-            this.btnEditServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditServer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEditServer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(120)))));
-            this.btnEditServer.Location = new System.Drawing.Point(95, 5);
-            this.btnEditServer.Name = "btnEditServer";
-            this.btnEditServer.Size = new System.Drawing.Size(40, 40);
-            this.btnEditServer.TabIndex = 1;
-            this.btnEditServer.Text = "✎";
-            this.btnEditServer.UseVisualStyleBackColor = false;
-            this.btnEditServer.Click += new System.EventHandler(this.btnEditServer_Click);
+            Btn_EditarComand.BackColor = Color.Transparent;
+            Btn_EditarComand.BackgroundImage = (System.Drawing.Image)resources.GetObject("Btn_EditarComand.BackgroundImage");
+            Btn_EditarComand.BackgroundImageLayout = ImageLayout.Zoom;
+            Btn_EditarComand.FlatStyle = FlatStyle.Popup;
+            Btn_EditarComand.ForeColor = Color.Transparent;
+            Btn_EditarComand.Location = new Point(100, 7);
+            Btn_EditarComand.Margin = new Padding(3, 4, 3, 4);
+            Btn_EditarComand.Name = "Btn_EditarComand";
+            Btn_EditarComand.Size = new Size(66, 65);
+            Btn_EditarComand.TabIndex = 9;
+            Btn_EditarComand.UseVisualStyleBackColor = false;
+            Btn_EditarComand.Click += Btn_EditarComand_Click;
             // 
-            // btnAddServer
+            // Btn_Iniciar
             // 
-            this.btnAddServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(200)))));
-            this.btnAddServer.FlatAppearance.BorderSize = 0;
-            this.btnAddServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddServer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAddServer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(120)))), ((int)(((byte)(50)))));
-            this.btnAddServer.Location = new System.Drawing.Point(34, 5);
-            this.btnAddServer.Name = "btnAddServer";
-            this.btnAddServer.Size = new System.Drawing.Size(40, 40);
-            this.btnAddServer.TabIndex = 0;
-            this.btnAddServer.Text = "+";
-            this.btnAddServer.UseVisualStyleBackColor = false;
-            this.btnAddServer.Click += new System.EventHandler(this.btnAddServer_Click);
+            Btn_Iniciar.BackColor = Color.Transparent;
+            Btn_Iniciar.BackgroundImage = (System.Drawing.Image)resources.GetObject("Btn_Iniciar.BackgroundImage");
+            Btn_Iniciar.BackgroundImageLayout = ImageLayout.Zoom;
+            Btn_Iniciar.FlatStyle = FlatStyle.Popup;
+            Btn_Iniciar.ForeColor = Color.Transparent;
+            Btn_Iniciar.Location = new Point(432, 7);
+            Btn_Iniciar.Margin = new Padding(3, 4, 3, 4);
+            Btn_Iniciar.Name = "Btn_Iniciar";
+            Btn_Iniciar.Size = new Size(66, 65);
+            Btn_Iniciar.TabIndex = 8;
+            Btn_Iniciar.UseVisualStyleBackColor = false;
+            Btn_Iniciar.Click += Btn_Iniciar_Click;
             // 
-            // lblServers
+            // Btn_AnadirComand
             // 
-            this.lblServers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblServers.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblServers.Location = new System.Drawing.Point(10, 10);
-            this.lblServers.Name = "lblServers";
-            this.lblServers.Size = new System.Drawing.Size(230, 25);
-            this.lblServers.TabIndex = 0;
-            this.lblServers.Text = "Servidores disponibles";
+            Btn_AnadirComand.BackColor = Color.Transparent;
+            Btn_AnadirComand.BackgroundImage = Properties.Resources.agregar;
+            Btn_AnadirComand.BackgroundImageLayout = ImageLayout.Zoom;
+            Btn_AnadirComand.FlatStyle = FlatStyle.Popup;
+            Btn_AnadirComand.ForeColor = Color.Transparent;
+            Btn_AnadirComand.Location = new Point(3, 7);
+            Btn_AnadirComand.Margin = new Padding(3, 4, 3, 4);
+            Btn_AnadirComand.Name = "Btn_AnadirComand";
+            Btn_AnadirComand.Size = new Size(66, 65);
+            Btn_AnadirComand.TabIndex = 5;
+            Btn_AnadirComand.UseVisualStyleBackColor = false;
+            Btn_AnadirComand.Click += Btn_AnadirComand_Click;
             // 
-            // splitContainerRight
+            // Txt_Resultados
             // 
-            this.splitContainerRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerRight.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerRight.Name = "splitContainerRight";
-            this.splitContainerRight.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            Txt_Resultados.BackColor = SystemColors.MenuText;
+            Txt_Resultados.Font = new System.Drawing.Font("RobotoMono Nerd Font", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Txt_Resultados.ForeColor = Color.Lime;
+            Txt_Resultados.Location = new Point(0, 331);
+            Txt_Resultados.Margin = new Padding(3, 4, 3, 4);
+            Txt_Resultados.Multiline = true;
+            Txt_Resultados.Name = "Txt_Resultados";
+            Txt_Resultados.ScrollBars = ScrollBars.Vertical;
+            Txt_Resultados.Size = new Size(918, 295);
+            Txt_Resultados.TabIndex = 2;
             // 
-            // splitContainerRight.Panel1
+            // statusStrip1
             // 
-            this.splitContainerRight.Panel1.Controls.Add(this.panelCommands);
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { tslBitacora });
+            statusStrip1.Location = new Point(0, 634);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Padding = new Padding(1, 0, 16, 0);
+            statusStrip1.Size = new Size(923, 26);
+            statusStrip1.TabIndex = 7;
+            statusStrip1.Text = "statusStrip1";
             // 
-            // splitContainerRight.Panel2
+            // tslBitacora
             // 
-            this.splitContainerRight.Panel2.Controls.Add(this.panelOutput);
-            this.splitContainerRight.Size = new System.Drawing.Size(730, 611);
-            this.splitContainerRight.SplitterDistance = 250;
-            this.splitContainerRight.TabIndex = 0;
+            tslBitacora.Name = "tslBitacora";
+            tslBitacora.Size = new Size(288, 20);
+            tslBitacora.Text = "Resultado bitácora: (esperando ejecución)";
             // 
-            // panelCommands
+            // List_Servers
             // 
-            this.panelCommands.Controls.Add(this.listViewCommands);
-            this.panelCommands.Controls.Add(this.panelCommandButtons);
-            this.panelCommands.Controls.Add(this.lblCommands);
-            this.panelCommands.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCommands.Location = new System.Drawing.Point(0, 0);
-            this.panelCommands.Name = "panelCommands";
-            this.panelCommands.Padding = new System.Windows.Forms.Padding(10);
-            this.panelCommands.Size = new System.Drawing.Size(730, 250);
-            this.panelCommands.TabIndex = 0;
-            // 
-            // listViewCommands
-            // 
-            this.listViewCommands.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listViewCommands.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewCommands.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listViewCommands.FullRowSelect = true;
-            this.listViewCommands.HideSelection = false;
-            this.listViewCommands.Location = new System.Drawing.Point(10, 35);
-            this.listViewCommands.MultiSelect = false;
-            this.listViewCommands.Name = "listViewCommands";
-            this.listViewCommands.Size = new System.Drawing.Size(710, 155);
-            this.listViewCommands.TabIndex = 2;
-            this.listViewCommands.UseCompatibleStateImageBehavior = false;
-            this.listViewCommands.View = System.Windows.Forms.View.List;
-            this.listViewCommands.SelectedIndexChanged += new System.EventHandler(this.listViewCommands_SelectedIndexChanged);
-            // 
-            // panelCommandButtons
-            // 
-            this.panelCommandButtons.Controls.Add(this.btnExecuteCommand);
-            this.panelCommandButtons.Controls.Add(this.btnDeleteCommand);
-            this.panelCommandButtons.Controls.Add(this.btnEditCommand);
-            this.panelCommandButtons.Controls.Add(this.btnAddCommand);
-            this.panelCommandButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelCommandButtons.Location = new System.Drawing.Point(10, 190);
-            this.panelCommandButtons.Name = "panelCommandButtons";
-            this.panelCommandButtons.Size = new System.Drawing.Size(710, 50);
-            this.panelCommandButtons.TabIndex = 1;
-            // 
-            // btnExecuteCommand
-            // 
-            this.btnExecuteCommand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
-            this.btnExecuteCommand.FlatAppearance.BorderSize = 0;
-            this.btnExecuteCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExecuteCommand.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExecuteCommand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(120)))));
-            this.btnExecuteCommand.Location = new System.Drawing.Point(417, 5);
-            this.btnExecuteCommand.Name = "btnExecuteCommand";
-            this.btnExecuteCommand.Size = new System.Drawing.Size(155, 40);
-            this.btnExecuteCommand.TabIndex = 3;
-            this.btnExecuteCommand.Text = "▶ Ejecutar";
-            this.btnExecuteCommand.UseVisualStyleBackColor = false;
-            this.btnExecuteCommand.Click += new System.EventHandler(this.btnExecuteCommand_Click);
-            // 
-            // btnDeleteCommand
-            // 
-            this.btnDeleteCommand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnDeleteCommand.FlatAppearance.BorderSize = 0;
-            this.btnDeleteCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteCommand.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDeleteCommand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnDeleteCommand.Location = new System.Drawing.Point(156, 5);
-            this.btnDeleteCommand.Name = "btnDeleteCommand";
-            this.btnDeleteCommand.Size = new System.Drawing.Size(40, 40);
-            this.btnDeleteCommand.TabIndex = 2;
-            this.btnDeleteCommand.Text = "−";
-            this.btnDeleteCommand.UseVisualStyleBackColor = false;
-            this.btnDeleteCommand.Click += new System.EventHandler(this.btnDeleteCommand_Click);
-            // 
-            // btnEditCommand
-            // 
-            this.btnEditCommand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
-            this.btnEditCommand.FlatAppearance.BorderSize = 0;
-            this.btnEditCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCommand.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEditCommand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(120)))));
-            this.btnEditCommand.Location = new System.Drawing.Point(95, 5);
-            this.btnEditCommand.Name = "btnEditCommand";
-            this.btnEditCommand.Size = new System.Drawing.Size(40, 40);
-            this.btnEditCommand.TabIndex = 1;
-            this.btnEditCommand.Text = "✎";
-            this.btnEditCommand.UseVisualStyleBackColor = false;
-            this.btnEditCommand.Click += new System.EventHandler(this.btnEditCommand_Click);
-            // 
-            // btnAddCommand
-            // 
-            this.btnAddCommand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(200)))));
-            this.btnAddCommand.FlatAppearance.BorderSize = 0;
-            this.btnAddCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCommand.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAddCommand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(120)))), ((int)(((byte)(50)))));
-            this.btnAddCommand.Location = new System.Drawing.Point(34, 5);
-            this.btnAddCommand.Name = "btnAddCommand";
-            this.btnAddCommand.Size = new System.Drawing.Size(40, 40);
-            this.btnAddCommand.TabIndex = 0;
-            this.btnAddCommand.Text = "+";
-            this.btnAddCommand.UseVisualStyleBackColor = false;
-            this.btnAddCommand.Click += new System.EventHandler(this.btnAddCommand_Click);
-            // 
-            // lblCommands
-            // 
-            this.lblCommands.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblCommands.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCommands.Location = new System.Drawing.Point(10, 10);
-            this.lblCommands.Name = "lblCommands";
-            this.lblCommands.Size = new System.Drawing.Size(710, 25);
-            this.lblCommands.TabIndex = 0;
-            this.lblCommands.Text = "Comandos del servidor";
-            // 
-            // panelOutput
-            // 
-            this.panelOutput.Controls.Add(this.txtOutput);
-            this.panelOutput.Controls.Add(this.lblOutput);
-            this.panelOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelOutput.Location = new System.Drawing.Point(0, 0);
-            this.panelOutput.Name = "panelOutput";
-            this.panelOutput.Padding = new System.Windows.Forms.Padding(10);
-            this.panelOutput.Size = new System.Drawing.Size(730, 357);
-            this.panelOutput.TabIndex = 0;
-            // 
-            // txtOutput
-            // 
-            this.txtOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtOutput.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtOutput.ForeColor = System.Drawing.Color.White;
-            this.txtOutput.Location = new System.Drawing.Point(10, 35);
-            this.txtOutput.Name = "txtOutput";
-            this.txtOutput.ReadOnly = true;
-            this.txtOutput.Size = new System.Drawing.Size(710, 312);
-            this.txtOutput.TabIndex = 1;
-            this.txtOutput.Text = "";
-            // 
-            // lblOutput
-            // 
-            this.lblOutput.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblOutput.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblOutput.Location = new System.Drawing.Point(10, 10);
-            this.lblOutput.Name = "lblOutput";
-            this.lblOutput.Size = new System.Drawing.Size(710, 25);
-            this.lblOutput.TabIndex = 0;
-            this.lblOutput.Text = "Salida de comandos";
+            List_Servers.Location = new Point(3, 135);
+            List_Servers.Margin = new Padding(3, 4, 3, 4);
+            List_Servers.Name = "List_Servers";
+            List_Servers.Size = new Size(385, 187);
+            List_Servers.TabIndex = 9;
+            List_Servers.UseCompatibleStateImageBehavior = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.splitContainerMain);
-            this.Controls.Add(this.panelTop);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Administración de comandos remotos";
-            this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).EndInit();
-            this.splitContainerMain.Panel1.ResumeLayout(false);
-            this.splitContainerMain.Panel2.ResumeLayout(false);
-            this.splitContainerMain.ResumeLayout(false);
-            this.panelServers.ResumeLayout(false);
-            this.panelServerButtons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerRight)).EndInit();
-            this.splitContainerRight.Panel1.ResumeLayout(false);
-            this.splitContainerRight.Panel2.ResumeLayout(false);
-            this.splitContainerRight.ResumeLayout(false);
-            this.panelCommands.ResumeLayout(false);
-            this.panelCommandButtons.ResumeLayout(false);
-            this.panelOutput.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLightLight;
+            ClientSize = new Size(923, 660);
+            Controls.Add(List_Servers);
+            Controls.Add(statusStrip1);
+            Controls.Add(Txt_Resultados);
+            Controls.Add(groupBox1);
+            Controls.Add(panel1);
+            IsMdiContainer = true;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "MainForm";
+            Text = "Administracion de Comandos Remotos";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.SplitContainer splitContainerMain;
-        private System.Windows.Forms.Panel panelServers;
-        private System.Windows.Forms.ListView listViewServers;
-        private System.Windows.Forms.Panel panelServerButtons;
-        private System.Windows.Forms.Button btnDeleteServer;
-        private System.Windows.Forms.Button btnEditServer;
-        private System.Windows.Forms.Button btnAddServer;
-        private System.Windows.Forms.Label lblServers;
-        private System.Windows.Forms.SplitContainer splitContainerRight;
-        private System.Windows.Forms.Panel panelCommands;
-        private System.Windows.Forms.ListView listViewCommands;
-        private System.Windows.Forms.Panel panelCommandButtons;
-        private System.Windows.Forms.Button btnExecuteCommand;
-        private System.Windows.Forms.Button btnDeleteCommand;
-        private System.Windows.Forms.Button btnEditCommand;
-        private System.Windows.Forms.Button btnAddCommand;
-        private System.Windows.Forms.Label lblCommands;
-        private System.Windows.Forms.Panel panelOutput;
-        private System.Windows.Forms.RichTextBox txtOutput;
-        private System.Windows.Forms.Label lblOutput;
+        private Panel panel1;
+        private GroupBox groupBox1;
+        private Panel panel2;
+        private TextBox Txt_Resultados;
+        private Label label1;
+        private Button Btn_EliminarServidor;
+        private Button Btn_EditarServidor;
+        private Button Btn_AnadirComand;
+        private Button Btn_AnadirServidor;
+        
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel tslBitacora;
+        private ListView List_Comandos;
+        private ListView List_Servers;
+        private Button Btn_EliminarCommand;
+        private Button Btn_Iniciar;
+        private Button Btn_EditarComand;
     }
 
 }

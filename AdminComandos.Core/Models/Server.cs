@@ -18,15 +18,21 @@ namespace Core.Models
         public List<Commands> Commands { get; set; } = new List<Commands>(); // Lista de comandos asociados
 
         // Constructor vacío requerido para serialización
-        public Server() { }
+        public Server()
+        {
+            Id = Guid.NewGuid(); // Asignar ID automáticamente
+            Commands = new List<Commands>();
+        }
 
         // Constructor con parámetros para facilitar la creación
         public Server(string name, string ip, string username, string encryptedPassword)
         {
+            Id = Guid.NewGuid(); // Asignar ID automáticamente
             Name = name;
             IP = ip;
             Username = username;
             EncryptedPassword = encryptedPassword;
+            Commands = new List<Commands>();
         }
     }
 }

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  container1:
+    build:
+      context: ./ssh-container
+    container_name: container1
+    networks:
+      ssh_net:
+        ipv4_address: 172.28.1.10
+
+  container2:
+    build:
+      context: ./ssh-container
+    container_name: container2
+    networks:
+      ssh_net:
+        ipv4_address: 172.28.1.11
+
+networks:
+  ssh_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
